@@ -1,0 +1,6 @@
+{
+  "name": "app-practica1-padre",
+  "short_name": "app-practica1-padre",
+  "start_url": "/",
+  "display": "standalone"
+}

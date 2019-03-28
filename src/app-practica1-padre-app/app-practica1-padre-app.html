@@ -1,0 +1,46 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/ids-practicauno/ids-practicauno.html">
+<dom-module id="app-practica1-padre-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <ids-practicauno on-event-custom-event="handlerSaveCustomEvent" on-evento-cancelar="handlerCancelCustomEvent">
+
+
+    </ids-practicauno>
+
+
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class AppPractica1PadreApp extends Polymer.Element {
+      static get is() {
+        return 'app-practica1-padre-app';
+      }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'app-practica1-padre-app'
+          }
+        };
+      }
+      handlerSaveCustomEvent(e) {
+        console.log(e);
+      }
+      handlerCancelCustomEvent(e) {
+        console.log
+        (e);
+      }
+    }
+
+    window.customElements.define(AppPractica1PadreApp.is, AppPractica1PadreApp);
+  </script>
+</dom-module>
